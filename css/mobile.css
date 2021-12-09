@@ -1,0 +1,61 @@
+@media screen and (max-width: 390px) {
+  header {
+    background: transparent;
+  }
+
+  .nav_container {
+    background-color: white;
+  }
+
+  #menu_icon {
+    display: inline-block;
+    color: white;
+    padding: 15px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 10px;
+    z-index: 5;
+  }
+
+  .right_nav_item {
+    flex-direction: column;
+    gap: 0px;
+    position: absolute;
+    top: 80%;
+    left: -200px;
+    transition: all .5s linear;
+    background-color: white;
+  }
+
+  .right_nav_item.open {
+    left: 0px;
+    transition: all .5s linear;
+  }
+
+  .left_nav_item {
+    display: none;
+  }
+
+  /*                                                                              FIRST SECTION */
+
+  .img_section_info {
+    margin-top: 55%;
+    gap: 30px;
+  }
+  
+  .img_section_info h1 {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+/*                                                                              SECOND SECTION */
+
+  .healthcare_section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .gallery_info {
+    display: none;
+  }
+}
