@@ -101,6 +101,14 @@ a {
   background-color: white;
 }
 
+.blue_line {
+  color: var(--main-color);
+  background-color: var(--main-color);
+  border: 2px var(--main-color) solid;
+  width: 50px;
+  margin-bottom: 20px;
+}
+
 /*                                                                              NAV SECTION */
 
 .nav_container {
@@ -109,6 +117,10 @@ a {
   align-items: center;
   flex-direction: row;
   gap:  60px;
+}
+
+#menu_icon {
+  display: none;
 }
 
 .left_nav_item {
@@ -153,9 +165,19 @@ a {
   gap: 10px;
 }
 
+.right_nav_item li:hover {
+  background-color: var(--main-color);
+}
+
+.right_nav_item li:hover a {
+  color: white;
+}
+
 .right_nav_item li a {
   color: var(--main-color);
 }
+
+/*                                                                              FIRST SECTION */
 
 .img_section {
   height: 100vh;
@@ -183,4 +205,65 @@ a {
 .img_section_info h1 {
   font-size: 100px;
   font-weight: bold;
+}
+
+/*                                                                              SECOND SECTION */
+
+.healthcare_section {
+  padding-top: 60px;
+}
+
+.gallery_fancy_section {
+  margin-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+
+.gallery_info {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery_info a {
+  padding: 5px 5px;
+}
+
+.gallery_info a img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+
+.gallery_about_text {
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.accordion_section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.accordion_title {
+  cursor: pointer;
+  max-width: 450px;
+  display: flex;
+  gap: 30px;
+  border-radius: 2%;
+  padding: 10px;
+  background-color: var(--secondary-color);
+}
+
+.accordion_info {
+  max-width: 400px;
+  margin-top: 20px;
+  margin-left: 40px;
+  display: none;
 }
