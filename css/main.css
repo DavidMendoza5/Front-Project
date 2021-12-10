@@ -35,6 +35,8 @@
   --font-body: 'Montserrat-Regular';
   --main-color: #3d98db;
   --secondary-color: #35E8D3;
+  --third-color: #E89110;
+  --fourth-color: #92C0E1;
   --footer-main-color: #363636;
   --footer-secundary-color: #2a2a2a;
 }
@@ -107,6 +109,11 @@ a {
   border: 2px var(--main-color) solid;
   width: 50px;
   margin-bottom: 20px;
+}
+
+.section_description {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 /*                                                                              NAV SECTION */
@@ -266,4 +273,91 @@ a {
   margin-top: 20px;
   margin-left: 40px;
   display: none;
+}
+
+/*                                                                              THIRD SECTION */
+.smart_doctors_section {
+  background: linear-gradient(white
+  50%,var(--fourth-color) 50%);
+}
+
+.smart_doctors_info {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.container_slide {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.arrow_class {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.arrow_btn {
+  display: inline-block;
+  border: 1px black solid;
+  padding: 20px 30px;
+  border-radius: 2%;
+}
+
+.arrow_btn:hover {
+  background-color: var(--secondary-color);
+}
+
+.viewport {
+  flex-grow: 1;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.overview {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  padding-left: 10px;
+}
+
+.cards {
+  text-align: center;
+  width: 290px;
+  padding: 10px;
+  margin-right: 15px;
+  border: 2px var(--third-color) solid;
+  border-radius: 2%;
+  background-color: white;
+  box-shadow: 10px 10px 10px rgb(105, 104, 104);
+}
+
+.cards h2 {
+  margin-top: 30px;
+}
+
+.cards h3 {
+  margin-top: 10px;
+}
+
+.cards figure img {
+  max-width: 250px;
+  max-height: 300px;
+}
+
+.social_media {
+  padding: 10px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

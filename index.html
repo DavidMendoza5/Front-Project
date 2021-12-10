@@ -8,9 +8,14 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/mobile.css">
   <link rel="stylesheet" href="fancybox/jquery.fancybox.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <script src='https://kit.fontawesome.com/66f5e943e2.js' crossorigin='anonymous'></script>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script type="text/javascript" src="fancybox/jquery.fancybox.js"></script>
+  <script src="js/jquery.tinycarousel.js"></script>
+  <script src="js/wow.min.js"></script>
   <script defer src="js/mobile.menu.js"></script>
 </head>
 <body>
@@ -46,6 +51,7 @@
       <a class="second_layer btn" href="#">APPOINT NOW</a>
     </article>
   </section>
+
 
   <section class="healthcare_section section_width">
     <div class="blue_line"></div>
@@ -126,6 +132,88 @@
     </section>
   </section>
 
+
+  <section class="smart_doctors_section">
+    <div class="smart_doctors_info section_width">
+      <div class="blue_line"></div>
+      <h2>Smart Doctors</h2>
+      <p class="section_description">
+        Etiam erat turpis, bibendum sit amet pulvinar vitae, venenatis <br>
+        quis lorem. Pellentesque faucibus tellus
+      </p>
+      <div id="slider1" class="container_slide">
+        <div class="arrow_class">
+          <a class="arrow_btn prev" href="#">
+            <i class="fas fa-arrow-left"></i>
+          </a>
+          <a class="arrow_btn next" href="#">
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+        <div class="viewport">
+          <div class="overview">
+            <article class="cards">
+              <figure>
+                <img src="images/persona1.jpg" alt="Persona 1">
+              </figure>
+              <h2>Dr. William</h2>
+              <h3>Blood Technician</h3>
+              <div class="social_media">
+                <a href="#"><i class="wow animate__animated animate__bounce fab fa-facebook-f"></i></a>
+                <a href="#"><i class="wow animate__animated animate__bounce fab fa-instagram"></i></a>
+              </div>
+            </article>
+            <article class="cards">
+              <figure>
+                <img src="images/persona2.jpg" alt="Persona 2">
+              </figure>
+              <h2>Dr. Megan</h2>
+              <h3>Dentist</h3>
+              <div class="social_media">
+                <a href="#"><i class="wow animate__animated animate__bounce fab fa-facebook-f"></i></a>
+                <a href="#"><i class="wow animate__animated animate__bounce fab fa-instagram"></i></a>
+              </div>
+            </article>
+            <article class="cards">
+              <figure>
+                <img src="images/persona3.jpg" alt="Persona 3">
+              </figure>
+              <h2>Dr. Shreya</h2>
+              <h3>Implants Specialist</h3>
+              <div class="social_media">
+                <a href="#"><i class="wow animate__animated animate__bounce fab fa-facebook-f"></i></a>
+                <a href="#"><i class="wow animate__animated animate__bounce fab fa-instagram"></i></a>
+              </div>
+            </article>
+            <article class="cards">
+              <figure>
+                <img src="images/persona4.jpg" alt="Persona 4">
+              </figure>
+              <h2>Dr. Leena</h2>
+              <h3>Cardiologist</h3>
+              <div class="social_media">
+                <a href="#"><i class="wow animate__animated animate__bounce fab fa-facebook-f"></i></a>
+                <a href="#"><i class="wow animate__animated animate__bounce fab fa-instagram"></i></a>
+              </div>
+            </article>
+            <article class="cards">
+              <figure>
+                <img src="images/persona5.jpg" alt="Persona 5">
+              </figure>
+              <h2>Dr. Sachin</h2>
+              <h3>Therapist</h3>
+              <div class="social_media">
+                <a href="#"><i class="wow animate__animated animate__bounce fab fa-facebook-f"></i></a>
+                <a href="#"><i class="wow animate__animated animate__bounce fab fa-instagram"></i></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
   <script>
     $('.accordion_title').click(function () {
       let accordion = $(this);
@@ -135,5 +223,15 @@
       icon.toggleClass('fa-plus-square fa-minus-square');
     });
   </script>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $("#slider1").tinycarousel();
+  });
+</script>
+
+<script>
+  new WOW().init();
+</script>
 </body>
 </html>

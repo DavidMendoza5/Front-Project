@@ -58,4 +58,11 @@
   .gallery_info {
     display: none;
   }
+
+/*                                                                              THIRD SECTION */
+
+  .smart_doctors_section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
