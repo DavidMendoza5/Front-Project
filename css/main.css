@@ -96,6 +96,7 @@ a {
   border: 1px white solid;
   background-color:  transparent;
   padding: 10px;
+  transition: all .5s;
 }
 
 .btn:hover {
@@ -276,6 +277,7 @@ a {
 }
 
 /*                                                                              THIRD SECTION */
+
 .smart_doctors_section {
   background: linear-gradient(white
   50%,var(--fourth-color) 50%);
@@ -341,6 +343,11 @@ a {
   box-shadow: 10px 10px 10px rgb(105, 104, 104);
 }
 
+.cards:hover figure img {
+  transform: scale(1.1);
+  transform: all .5s;
+}
+
 .cards h2 {
   margin-top: 30px;
 }
@@ -349,15 +356,153 @@ a {
   margin-top: 10px;
 }
 
+.cards figure {
+  overflow: hidden;
+  border-radius: 20px;
+}
+
 .cards figure img {
   max-width: 250px;
   max-height: 300px;
+  border-radius: 10px;
 }
 
 .social_media {
   padding: 10px;
   height: 50px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
+
+.social_media a {
+  padding: 0;
+}
+
+.social_media a i:hover {
+  transform: scale(1.1);
+  transform: all .5s;
+}
+
+/*                                                                              FOURTH SECTION */
+
+.treatments_section {
+  padding-top: 60px;
+}
+
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  min-height: 400px;
+  object-fit: cover;
+  border: 0;
+  filter: brightness(0.5);
+}
+
+.callbacks_container {
+  margin-bottom: 50px;
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.caption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.caption a {
+  font-size: 15px;
+  display: block;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: white;
+  border: 2px white solid;
+  border-radius: 60px;
+  text-decoration: none;
+}
+
+.caption a:hover {
+  background-color: white;
+  color: blue;
+}
+
+.callbacks .caption {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+  height: 70%;
+  transform: translate(50%, 15%);
+  position: absolute;
+  z-index: 2;
+  font-size: 20px;
+  text-shadow: none;
+  color: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px 10px;
+  margin: 0;
+  max-width: none;
+}
+
+.callbacks_nav {
+  position: absolute;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  top: 52%;
+  left: 0;
+  opacity: 0.7;
+  z-index: 3;
+  text-indent: -9999px;
+  overflow: hidden;
+  text-decoration: none;
+  height: 61px;
+  width: 38px;
+  background: transparent url('../images/flechas.gif') no-repeat left top;
+  margin-top: -45px;
+}
+
+.callbacks_nav:active {
+  opacity: 1;
+}
+
+.callbacks_nav.next {
+  left: auto;
+  background-position: right top;
+  right: 0;
+}
+
+/*                                                                              FIFTH SECTION */
+
