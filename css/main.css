@@ -104,6 +104,13 @@ a {
   background-color: white;
 }
 
+.up_btn {
+  position: fixed;
+  right: 0;
+  bottom: 50px;
+  z-index: 10;
+}
+
 .blue_line {
   color: var(--main-color);
   background-color: var(--main-color);
@@ -428,7 +435,7 @@ a {
 .callbacks_container {
   margin-bottom: 50px;
   position: relative;
-  float: left;
+  /* float: left; */
   width: 100%;
 }
 
@@ -506,3 +513,117 @@ a {
 
 /*                                                                              FIFTH SECTION */
 
+.appoinment_main_section {
+  background-color: var(--fourth-color);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+.appoinment_info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.appoinment_info article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.appoint_gallery {
+  display: grid;
+  grid-template: repeat(2, auto) / repeat(2, auto);
+  grid-template-areas: "first_pic second_pic " 
+    "third_pic fourth_pic";
+  border: 1px var(--third-color) solid;
+  background-color: var(--third-color);
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.picture1 img {
+  grid-area: first_pic;
+  max-height: 300px;
+}
+
+.picture2 img {
+  grid-area: second_pic;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.picture3 img {
+  grid-area: third_pic;
+  max-width: 300px;
+  max-height: 200px;
+}
+
+.picture4 img {
+  grid-area: fourth_pic;
+  max-width: 300px;
+  max-height: 200px;
+}
+
+.modal_info {
+  display: none;
+  background-color: rgba(0, 0, 0, .8);
+  color: white;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  position: fixed;
+  z-index: 100;
+  overflow: auto;
+  top: 0;
+  left: 0;
+}
+
+.modal_body {
+  margin: auto;
+  max-width: 500px;
+  padding: 40px 30px;    
+  background-color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 25px;
+  position: relative;
+}
+
+.modal_body form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.modal_body h1 {
+  color: black;
+}
+
+.modal_body form * {
+  margin: 5px 0;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.close {
+  background-color:rgb(58, 58, 58);
+  text-decoration: none;
+  color: white;
+  padding: 2px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: calc(0% - 40px);
+  right: 0;
+  position: absolute;
+  cursor: pointer;
+}

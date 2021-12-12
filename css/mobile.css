@@ -7,6 +7,10 @@
     background-color: white;
   }
 
+  .up_btn a {
+    padding: 0px;
+  }
+
   #menu_icon {
     display: inline-block;
     color: white;
@@ -72,4 +76,15 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+
+    /*                                                                              FIFTH SECTION */
+
+    .appoinment_section {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .appoinment_info article {
+      display: none;
+    }
 }
